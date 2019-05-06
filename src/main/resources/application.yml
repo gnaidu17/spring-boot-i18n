@@ -1,0 +1,16 @@
+server:
+    port: 8035
+spring:
+    datasource:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        password: Platform@123
+        url: jdbc:mysql://localhost:3306/test?autoReconnect=true&useSSL=false
+        username: root
+    jackson:
+        serialization:
+            fail-on-empty-beans: false
+    jpa:
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.MySQL5Dialect
+        show-sql: true
